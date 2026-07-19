@@ -1,68 +1,77 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-import { FaYoutube } from "react-icons/fa";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-grey-200  p-[15px] text-white">
-      <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] ">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Youtube</span>
+    <div className="w-full h-full bg-transparent text-gray-200 border-t border-[#2A0E61]/40 py-10 px-5 text-white z-[20] relative">
+      <div className="max-w-[1200px] w-full flex flex-col items-center justify-center m-auto gap-8">
+        <div className="w-full flex flex-row items-center justify-around flex-wrap gap-8 text-center md:text-left">
+          
+          <div className="min-w-[200px] h-auto flex flex-col items-center md:items-start justify-start gap-3">
+            <div className="font-bold text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              Professional Links
+            </div>
+            <a 
+              href="https://github.com/santhosh2003-bit" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex flex-row items-center gap-2 hover:text-[#b49bff] transition duration-200"
+            >
+              <RxGithubLogo className="w-5 h-5" />
+              <span className="text-[15px]">GitHub</span>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/santhoshchintu534/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex flex-row items-center gap-2 hover:text-[#b49bff] transition duration-200"
+            >
+              <RxLinkedinLogo className="w-5 h-5" />
+              <span className="text-[15px]">LinkedIn</span>
+            </a>
+          </div>
+
+          <div className="min-w-[200px] h-auto flex flex-col items-center md:items-start justify-start gap-3">
+            <div className="font-bold text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              Contact
+            </div>
+            <a 
+              href="mailto:santhoshchintu534@gmail.com" 
+              className="flex flex-row items-center gap-2 hover:text-[#b49bff] transition duration-200"
+            >
+              <HiOutlineMail className="w-5 h-5" />
+              <span className="text-[15px]">santhoshchintu534@gmail.com</span>
+            </a>
+            <a 
+              href="tel:+917036493674" 
+              className="flex flex-row items-center gap-2 hover:text-[#b49bff] transition duration-200"
+            >
+              <HiOutlinePhone className="w-5 h-5" />
+              <span className="text-[15px]">+91 7036493674</span>
+            </a>
+          </div>
+
+          <div className="min-w-[200px] h-auto flex flex-col items-center md:items-start justify-start gap-3">
+            <div className="font-bold text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              About
+            </div>
+            <p className="text-[15px] text-gray-400">
+              B.Tech in Cyber Security
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">GitHub</span>
+            <p className="text-[15px] text-gray-400">
+              Software Engineer
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]">Discord</span>
+            <p className="text-[15px] text-gray-400">
+              Hyderabad, India
             </p>
           </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxInstagramLogo />
-              <span className="text-[15px] ml-[6px]">Instagram</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxTwitterLogo />
-              <span className="text-[15px] ml-[6px]">Twitter</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]">LinkedIn</span>
-            </p>
-          </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Learning About Me</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">
-                Contact No : 7036493674
-              </span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">
-                santhoshchintu534@gmail.com
-              </span>
-            </p>
-          </div>
+
         </div>
-        <div className="mb-[20px] text-[15px] text-center">
-          &copy; Me Full-Stack Developer 2024 Inc. All Rights Reserved
+
+        <div className="mt-8 text-[14px] text-gray-500 text-center border-t border-[#7042f83a] w-full pt-5">
+          &copy; {new Date().getFullYear()} Boda Santhosh. All Rights Reserved.
         </div>
       </div>
     </div>
@@ -70,3 +79,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
